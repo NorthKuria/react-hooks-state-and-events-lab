@@ -9,6 +9,7 @@ function ShoppingList({ items }) {
   }
 
   const filteredItems = items.filter((item) => {
+    if (selectedCategory === 'All') return true
     return item.category === selectedCategory
   })
 
